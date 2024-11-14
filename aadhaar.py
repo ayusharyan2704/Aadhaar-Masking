@@ -62,7 +62,7 @@ masked_image, UID = aadhar_mask_and_ocr(thres_image, resized_image)
 
 
 try:
-    cv2.imshow('Masked Image', masked_image)
+    cv2.imshow('Masked Image we get:', masked_image)
 
     output_path = 'masked_' + image_path
     cv2.imwrite(output_path, masked_image)
